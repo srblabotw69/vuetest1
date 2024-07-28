@@ -11,10 +11,41 @@ import { Root } from "./Root"
 import Connections from "./Connections"
 import Schema from "./eas/Schema"
 
+
+const router = createBrowserRouter([
+  {
+    path: "/happyattest/",
+    element: <Root />,
+    children: [
+      {
+        path: "/happyattest/",
+        element: <Home />,
+      },
+      {
+        path: "/happyattest/schema",
+        element: <Schema />,
+      }, 
+      {
+        path: "/happyattest/connections",
+        element: <Connections />,
+      },
+    ],
+  },
+]);
+
+function App() {
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
+}
+
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    App
   }
 }
 </script>

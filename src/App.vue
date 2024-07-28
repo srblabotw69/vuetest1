@@ -4,7 +4,12 @@
 </template>
 
 <script>
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HelloWorld from './components/HelloWorld.vue'
+import Home from "./eas/Home"
+import { Root } from "./Root"
+import Connections from "./Connections"
+import Schema from "./eas/Schema"
 
 export default {
   name: 'App',

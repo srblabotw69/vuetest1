@@ -6,10 +6,10 @@
 <script>
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HelloWorld from './components/HelloWorld.vue'
-import Home from "./eas/Home.tsx"
-import { Root } from "./Root.tsx"
-import Connections from "./Connections.tsx"
-import Schema from "./eas/Schema.tsx"
+import Home from "./eas/Home"
+import { Root } from "./Root"
+import Connections from "./Connections"
+import Schema from "./eas/Schema"
 
 
 const router = createBrowserRouter([
